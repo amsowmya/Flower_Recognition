@@ -8,7 +8,7 @@ CORS(app)
 
 class ClientApp:
     def __init__(self):
-        self.fileName = 'Rose.png'
+        self.fileName = 'sample_flowers/Rose.png'
         self.classifier = flower(self.fileName)
 
 @app.route('/', methods=['GET'])
