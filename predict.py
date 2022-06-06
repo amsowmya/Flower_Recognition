@@ -7,7 +7,7 @@ class flower:
         self.fileName = fileName
 
     def predict_flower(self):
-        model = load_model('model.h5')
+        model = load_model('saved_models/model.h5')
 
         test_image = image.load_img(self.fileName, target_size=(64, 64))
         test_image = image.img_to_array(test_image)

@@ -57,8 +57,8 @@ model = classifier.fit_generator(training_set,
                                  validation_data=validation_set,
                                  validation_steps=2000)
 
-classifier.save('model.h5')
-classifier.save_weights('classifier_weights.h5')
+classifier.save('saved_models/model.h5')
+classifier.save_weights('saved_models/classifier_weights.h5')
 print('Saved model to disk')
 
 # PART 3: Check Model Performance on Test Data
